@@ -15,9 +15,13 @@ export const Card = ({ name, repository, demo, description }: CardProps) => (
     <Description>{description}</Description>
 
     <Links>
-      <Link to={repository}>Repository</Link>
+      <Link to={repository} target="_blank">
+        Repository
+      </Link>
 
-      <Link to={demo}>Demo</Link>
+      <Link to={demo} target="_blank">
+        Demo
+      </Link>
     </Links>
   </Container>
 );
